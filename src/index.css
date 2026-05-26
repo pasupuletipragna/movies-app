@@ -1,0 +1,111 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://res.cloudinary.com/dkbxi5qts/image/upload/v1660038313/movies%20prime%20app/Background_c4ixrl.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.login-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 8px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  width: 160px;
+  margin-bottom: 32px;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 28px;
+  align-self: flex-start;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+}
+
+.login-input {
+  background: #333333;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: #d81f26;
+}
+
+.login-input::placeholder {
+  color: #888888;
+}
+
+.error-msg {
+  font-size: 13px;
+  color: #d81f26;
+  margin-top: -8px;
+}
+
+.login-btn {
+  background-color: #d81f26;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #b71c1c;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    margin: 20px;
+    padding: 32px 24px;
+  }
+}

@@ -1,0 +1,107 @@
+.account-page {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-content {
+  flex: 1;
+  padding: 100px 48px 48px;
+  max-width: 800px;
+}
+
+.account-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.account-divider {
+  border: none;
+  border-top: 1px solid #333333;
+  margin: 0 0 24px;
+}
+
+.account-section {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.account-label {
+  font-size: 16px;
+  color: #888888;
+  min-width: 160px;
+  font-weight: 500;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-username {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.account-password {
+  font-size: 16px;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+}
+
+.plan-info {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.plan-name {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.plan-badge {
+  background: linear-gradient(to right, #3a3a3a, #5a5a5a);
+  color: #d4af37;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid #d81f26;
+  color: #d81f26;
+  padding: 10px 32px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 16px;
+}
+
+.logout-btn:hover {
+  background: #d81f26;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .account-content {
+    padding: 90px 16px 32px;
+  }
+
+  .account-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

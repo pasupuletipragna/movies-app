@@ -1,0 +1,97 @@
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\Header\index.jsx
+  18:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  16 |
+  17 |   useEffect(() => {
+> 18 |     setSearchInput(currentSearch)
+     |     ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  19 |   }, [currentSearch])
+  20 |
+  21 |   useEffect(() => {  react-hooks/set-state-in-effect
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\HomeRoute\index.jsx
+  91:14  error  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            no-unused-vars
+  97:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+   95 |
+   96 |   useEffect(() => {
+>  97 |     getMoviesData()
+      |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+   98 |   }, [])
+   99 |
+  100 |   const scroll = (ref, direction) => {  react-hooks/set-state-in-effect
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\LoginRoute\index.jsx
+  52:14  error  'e' is defined but never used  no-unused-vars
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\MovieItemDetails\index.jsx
+  67:14  error    'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    no-unused-vars
+  73:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  71 |
+  72 |   useEffect(() => {
+> 73 |     getMovieDetails()
+     |     ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  74 |   }, [id])
+  75 |
+  76 |   const renderLoadingView = () => (  react-hooks/set-state-in-effect
+  74:6   warning  React Hook useEffect has a missing dependency: 'getMovieDetails'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/exhaustive-deps
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\PopularRoute\index.jsx
+  45:14  error  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    no-unused-vars
+  51:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  49 |
+  50 |   useEffect(() => {
+> 51 |     getPopularMovies()
+     |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  52 |   }, [])
+  53 |
+  54 |   const renderLoadingView = () => (  react-hooks/set-state-in-effect
+
+C:\Users\pasup\OneDrive\Desktop\Movies App\movies_app\src\components\SearchRoute\index.jsx
+  53:14  error    'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               no-unused-vars
+  59:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  57 |
+  58 |   useEffect(() => {
+> 59 |     getSearchResults()
+     |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  60 |   }, [searchQuery])
+  61 |
+  62 |   const renderLoadingView = () => (  react-hooks/set-state-in-effect
+  60:6   warning  React Hook useEffect has a missing dependency: 'getSearchResults'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/exhaustive-deps
+
+✖ 12 problems (10 errors, 2 warnings)
+
