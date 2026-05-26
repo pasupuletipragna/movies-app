@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 In this project let's build a **Movies App** by applying the concepts we have learned till now. This project allows you to practice the concepts and techniques learned till React Course and apply them in a concrete project.
 
 You will demonstrate your skills by creating an app that will fetch data from an internal server using a **functional component**, displaying that data, using **React hooks** (`useState`, `useEffect`), **routing** concepts, **authentication**, and **authorization**, and adding responsiveness to the website.
@@ -641,3 +642,7 @@ If you complete the main features of the project you can try out the below featu
 > - Use **functional components** with **React hooks** (`useState`, `useEffect`, `useNavigate`, `useParams`, `useLocation`) for all components.
 > - **Do not remove the pre-filled code**
 > - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+=======
+# movies-app
+A React Movies Application using API Integration
+>>>>>>> 6d0d5ffe94bd46539c9e343302f80eae1b737e8a
